@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="PT">
+  <head>
+    <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de cadastro</title>
+  </head>
+  <body>
+    <form
+      name="signup"
+      action="#"
+      //-- o atributo action serve para indicar o destino das informações do cadastro
+      method="post"
+      //-- Atributo method serve como opção para manter preenchido o formulário ou não caso retorne a página de preenchimento
+      target="_self"
+      autocomplete="on"
+    >
+      <h2>Cadastro do usuário</h2>
+      Nome:
+      <input type="text" name="name" />
+      Sobrenome:
+      <input type="text" name="surname" />
+      <br />
+      Idade:
+      <input
+        type="number"
+        name="age"
+        title="Digite sua idade com dois dígitos"
+      />
+      <small> (Digite sua idade com dois dígitos) </small>
+      <br />
+      Data de nascimento:
+      <input type="date" name="born" />
+      <br />
+      Telefone:
+      <input type="tel" name="tel" />
+      E-mail:
+      <input type="email" name="email" />
+      <br />
+      Senha: <input type="password" name="password" />
+      <br />
+      <input type="file" name="file">
+      <br /><br />      
+      <input type="checkbox" name="terms" /> Eu concordo com os termos.
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
